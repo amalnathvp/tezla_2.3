@@ -386,3 +386,55 @@ const fireFindMeOut = () => {
         showConfirmButton: false
     })
 }
+
+
+const fireWebDesign = () => {
+    let data = {
+        name: "Web Designing",
+        desc: 'Participants compete to create the best website or web application based on a specific set of criteria.',
+        venue: 'CS Lab',
+        registration: 'Pre and Spot Registration',
+        participation: '30',
+        time: '11:00 AM onwards',
+        regFee: '20',
+        prize: '<ul><li>First: ₹1000</li> <li>Second: ₹500</li></ul>'
+    }
+
+    Swal.fire({
+       
+        title: "Web Designing",
+        html: `
+            <p>${data.desc}</p>
+            <table class="align-left" align='center'>
+                <tr>
+                    <th>Registration fee</th>
+                    <td>${data.regFee}</td>
+                </tr>
+                <tr>
+                    <th>Registration Mode</th>
+                    <td>${data.registration}</td>
+                </tr>
+                <tr>
+                    <th>Venue</th>
+                    <td>${data.venue}</td>
+                </tr>
+                <tr>
+                    <th>Time</th>
+                    <td>${data.time}</td>
+                </tr>
+                <tr>
+                    <th>Max Participation</th>
+                    <td>${data.participation}</td>
+                </tr>
+                <tr>
+                    <th>Prize</th>
+                    <td>${data.prize}</td>
+                </tr>
+            </table>
+            `,
+            color: '#e1e3e1',
+            background: 'black',
+        showCancelButton: false,
+        showConfirmButton: false
+    })
+}
