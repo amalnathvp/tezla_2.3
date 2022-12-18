@@ -9,7 +9,7 @@ const fireCoding = () => {
         participation: '30',
         time: '10:00 AM onwards',
         regFee: '20',
-        prize: '<ul><li>First: ₹750</li> <li>Second: ₹500</li></ul>'
+        prize: '<ul><li>First: ₹1000</li> <li>Second: ₹700</li></ul>'
     }
 
     Swal.fire({
@@ -55,12 +55,12 @@ const firePhotography = () => {
     let data = {
         name: "Spot Photography",
         desc: 'The Participants are required to submit the best photo taken according to the Subject given.',
-        venue: 'D1 BCA',
+        venue: 'D2 BCA',
         registration: 'Pre and Spot Registration',
         participation: 'No Limit',
         time: '10:00 AM to 1:00 PM',
         regFee: '10',
-        prize: '₹500'
+        prize: '<ul><li>First: ₹1000</li> <li>Second: ₹700</li></ul>'
     }
 
     Swal.fire({
@@ -103,14 +103,14 @@ const firePhotography = () => {
 
 const fireGame = () => {
     let data = {
-        name: "Game Fest",
+        name: "Republic Of Gamers",
         desc: 'The Main competition will have 3 knockout rounds, Consisting of 2 or 3 PC games. The fest will also host Android games as spot registrations.',
         venue: 'CS Lab',
         registration: 'Pre and Spot Registration',
         participation: '100',
         time: '10:00 AM onwards',
-        regFee: '20',
-        prize: '<ul><li>First: ₹1000</li> <li>Second: ₹500</li></ul>'
+        // regFee: '20',
+        prize: '<ul><li>First: ₹1500</li> <li>Second: ₹1000</li></ul>'
     }
 
     Swal.fire({
@@ -153,14 +153,14 @@ const fireGame = () => {
 
 const fireKeyBoard = () => {
     let data = {
-        name: "KeyBoard Assembling",
-        desc: 'Keyboard with missing keys are provided to participants and required to assemble the keyboard correctly. The winner is selected by time taken and correctness.',
+        name: "Hardware Assembling",
+        desc: 'Build a computer with individual components and make the computer working perfectly',
         venue: 'D3 BCA',
         registration: 'Pre and Spot Registration',
         participation: '20',
-        time: '10:00 AM onwards',
+        time: '11:15 AM onwards',
         regFee: '20',
-        prize: '₹500'
+        prize: '<ul><li>First: ₹1000</li> <li>Second: ₹700</li></ul>'
     }
 
     Swal.fire({
@@ -205,12 +205,12 @@ const fireSpotGame = () => {
     let data = {
         name: "Spot Game",
         desc: 'Participants are challenged with fun involved instant games. Winner is selected considering overall performance.',
-        venue: 'D2 BCA',
+        venue: '2nd BCA',
         registration: 'Pre and Spot Registration',
         participation: 'No Limit',
         time: '10:00 AM onwards',
         regFee: '10',
-        prize: '₹500'
+        prize: ' - '
     }
 
     Swal.fire({
@@ -256,12 +256,12 @@ const fireSpotDance = () => {
         name: "Spot Dance",
         desc: `Participants are challenged with varieties of songs on spot.
         Winner is selected considering performance and instantaneity.`,
-        venue: 'Conference Hall',
+        venue: 'Open Stage',
         registration: 'Spot Registration',
         participation: 'No Limit',
         time: '3:00 PM onwards',
         regFee: '10',
-        prize: '₹750'
+        prize: '<ul><li>First: ₹1000</li> <li>Second: ₹700</li></ul>'
     }
 
     Swal.fire({
@@ -352,16 +352,16 @@ const fireExpo = () => {
 
 const fireFindMeOut = () => {
     let data = {
-        name: "Find Me Out",
-        desc: 'Find the word using the given hints. Everyone can participate. Submit the answer using the given link',
-        time: 'Before 01/04/2022 2:00 PM',
-        prize: '₹200'
+        name: "Treasure Hunt",
+        desc: 'Hunt the treasure with given hints as fast as you can.',
+        time: '1:00 PM',
+        prize: '<ul><li>First: ₹2000</li> <li>Second: ₹1500</li></ul>'
     }
 
     Swal.fire({
         title: data.name,
         html: `
-            <img class="findMe" src="assets/img/findme.jpg">
+            
             <p>${data.desc}</p>
             <table class="align-left" align='center'>
                 <tr>
@@ -376,7 +376,7 @@ const fireFindMeOut = () => {
                 </tr>
             </table>
             <div style="margin:0.5rem">
-            <a class="btn btn-primary" href="https://forms.gle/M5874ME35LmFyDh37" target="_blank">Submit Your Answer</a>
+            
             </div>
             </div>
             `,
@@ -395,7 +395,7 @@ const fireWebDesign = () => {
         venue: 'CS Lab',
         registration: 'Pre and Spot Registration',
         participation: '30',
-        time: '11:00 AM onwards',
+        time: '11:15 AM onwards',
         regFee: '20',
         prize: '<ul><li>First: ₹1000</li> <li>Second: ₹500</li></ul>'
     }
