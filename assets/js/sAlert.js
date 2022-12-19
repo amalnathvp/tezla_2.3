@@ -8,7 +8,7 @@ const fireCoding = () => {
         registration: 'Pre and Spot Registration',
         participation: '30',
         time: '10:00 AM onwards',
-        regFee: '20',
+        regFee: 'Everyone can attend upto any three events with a single registration of ₹150 ',
         prize: '<ul><li>First: ₹1000</li> <li>Second: ₹700</li></ul>'
     }
 
@@ -59,7 +59,7 @@ const firePhotography = () => {
         registration: 'Pre and Spot Registration',
         participation: 'No Limit',
         time: '10:00 AM to 1:00 PM',
-        regFee: '10',
+        regFee: 'Everyone can attend upto any three events with a single registration of ₹150 ',
         prize: '<ul><li>First: ₹1000</li> <li>Second: ₹700</li></ul>'
     }
 
@@ -109,7 +109,7 @@ const fireGame = () => {
         registration: 'Pre and Spot Registration',
         participation: '100',
         time: '10:00 AM onwards',
-        // regFee: '20',
+        regFee: 'Everyone can attend upto any three events with a single registration of ₹150 ',
         prize: '<ul><li>First: ₹1500</li> <li>Second: ₹1000</li></ul>'
     }
 
@@ -159,7 +159,7 @@ const fireKeyBoard = () => {
         registration: 'Pre and Spot Registration',
         participation: '20',
         time: '11:15 AM onwards',
-        regFee: '20',
+        regFee: 'Everyone can attend upto any three events with a single registration of ₹150 ',
         prize: '<ul><li>First: ₹1000</li> <li>Second: ₹700</li></ul>'
     }
 
@@ -209,7 +209,7 @@ const fireSpotGame = () => {
         registration: 'Pre and Spot Registration',
         participation: 'No Limit',
         time: '10:00 AM onwards',
-        regFee: '10',
+        regFee: 'Everyone can attend upto any three events with a single registration of ₹150 ',
         prize: ' - '
     }
 
@@ -260,7 +260,7 @@ const fireSpotDance = () => {
         registration: 'Spot Registration',
         participation: 'No Limit',
         time: '3:00 PM onwards',
-        regFee: '10',
+        regFee: 'Everyone can attend upto any three events with a single registration of ₹150 ',
         prize: '<ul><li>First: ₹1000</li> <li>Second: ₹700</li></ul>'
     }
 
@@ -396,7 +396,7 @@ const fireWebDesign = () => {
         registration: 'Pre and Spot Registration',
         participation: '30',
         time: '11:15 AM onwards',
-        regFee: '20',
+        regFee: 'Everyone can attend upto any three events with a single registration of ₹150 ',
         prize: '<ul><li>First: ₹1000</li> <li>Second: ₹500</li></ul>'
     }
 
@@ -438,3 +438,48 @@ const fireWebDesign = () => {
         showConfirmButton: false
     })
 }
+    const fireQuiz = () => {
+        let data = {
+            name: "IT QUIZ",
+            desc: ' Check Your knowledge in IT and try to gain new information',
+            venue: 'D3 BCA',
+            registration: 'No Registration',
+            participation: 'No Limit',
+            time: '10:00 AM onwards',
+            regFee: 'Everyone can attend upto any three events with a single registration of ₹150 ',
+            prize: '<ul><li>First: ₹1000</li> <li>Second: ₹700</li></ul>'
+        }
+    
+        Swal.fire({
+            title: data.name,
+            html: `
+                <p>${data.desc}</p>
+                <table class="align-left" align='center'>
+                    <tr>
+                        <th>Registration fee</th>
+                        <td>${data.regFee}</td>
+                    </tr>
+                    <tr>
+                        <th>Registration Mode</th>
+                        <td>${data.registration}</td>
+                    </tr>
+                    <tr>
+                        <th>Venue</th>
+                        <td>${data.venue}</td>
+                    </tr>
+                    <tr>
+                        <th>Time</th>
+                        <td>${data.time}</td>
+                    </tr>
+                    <tr>
+                        <th>Max Participation</th>
+                        <td>${data.participation}</td>
+                    </tr>
+                </table>
+                `,
+                color: '#e1e3e1',
+                background: 'black',
+            showCancelButton: false,
+            showConfirmButton: false
+        })
+    }
